@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SRGEC Transport Portal',
-  description: 'SRGECTransport Portal',
-  generator: 'SRGEC Transport Portal',
+  title: 'Hindusthan Institute of Technology Transport Portal',
+  description: 'Hindusthan Institute of Technology Transport Portal',
+  generator: 'Hindusthan Institute of Technology Transport Portal',
 }
 
 export default function RootLayout({

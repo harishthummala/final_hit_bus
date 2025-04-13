@@ -70,7 +70,7 @@ export default function LoginPage() {
       <div className="relative flex min-h-screen items-center justify-center p-4">
         <div className="w-full max-w-md space-y-6 rounded-xl bg-white p-6 shadow-lg sm:p-10">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">Login to SRGEC Transportation Portal</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900">Login to Hindusthan Institute of Technology Transportation Portal</h2>
             <p className="mt-2 text-sm text-gray-600">Enter your credentials to access the {userType} portal</p>
           </div>
 

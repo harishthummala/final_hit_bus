@@ -13,7 +13,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
-            SRGEC Transportation Portal
+          Hindusthan Institute of Technology, Transportation Portal
           </Link>
           <button className="rounded p-2 lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
