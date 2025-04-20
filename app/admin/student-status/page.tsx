@@ -76,7 +76,6 @@ export default function Status() {
 
         setRfidTags(tagsData)
 
-        // Set the first tag as selected by default
         if (tagsData.length > 0 && !selectedTag) {
           setSelectedTag(tagsData[0].id)
         }
@@ -89,17 +88,11 @@ export default function Status() {
     }
 
     fetchRFIDTags()
-  }, [selectedTag])
+  }, [])
 
-  // Format timestamp to readable date/time
   const formatTimestamp = (timestamp: { seconds: number; nanoseconds: number } | null) => {
     if (!timestamp) return "N/A"
     return format(new Date(timestamp.seconds * 1000), "MMM d, yyyy h:mm a")
-  }
-
-  // Get the selected tag data
-  const getSelectedTagData = () => {
-    return rfidTags.find((tag) => tag.id === selectedTag)
   }
 
   return (
@@ -147,18 +140,14 @@ export default function Status() {
                                 <div key={index} className="rounded-md bg-card p-3 shadow-sm">
                                   <div className="flex items-center justify-between">
                                     <span className="text-sm font-medium">{entry.date}</span>
-                                    <Badge variant={entry.status === "LOGGED IN" ? "default" : "secondary"}>
-                                      {entry.status}
-                                    </Badge>
+                                    <Badge variant={entry.status === "LOGGED IN" ? "default" : "secondary"}>{entry.status}</Badge>
                                   </div>
                                   <div className="mt-2 grid grid-cols-2 gap-2 text-sm">
                                     <div>
-                                      <span className="text-muted-foreground">Time In:</span>{" "}
-                                      {formatTimestamp(entry.timeIn)}
+                                      <span className="text-muted-foreground">Time In:</span> {formatTimestamp(entry.timeIn)}
                                     </div>
                                     <div>
-                                      <span className="text-muted-foreground">Time Out:</span>{" "}
-                                      {formatTimestamp(entry.timeOut)}
+                                      <span className="text-muted-foreground">Time Out:</span> {formatTimestamp(entry.timeOut)}
                                     </div>
                                   </div>
                                 </div>
