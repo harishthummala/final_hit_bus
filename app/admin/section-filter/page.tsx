@@ -14,16 +14,16 @@ import { getFirestore, collection, getDocs, addDoc, Timestamp } from "firebase/f
 import { Loader2 } from "lucide-react"
 import { toast } from "@/components/ui/use-toast"
 
-// Firebase configuration - replace with your actual config
+// Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDcjhpCEGyL2FGXBoWXfWvTQC6ctp_adsY",
-  authDomain: "rfid-937d8.firebaseapp.com",
-  databaseURL: "https://rfid-937d8-default-rtdb.firebaseio.com",
-  projectId: "rfid-937d8",
-  storageBucket: "rfid-937d8.firebasestorage.app",
-  messagingSenderId: "980552143223",
-  appId: "1:980552143223:web:04dc787a69a384cc069172",
-  measurementId: "G-9XVQWPTGP1"
+  apiKey: "AIzaSyBz7ljDQbR-TSyZ-UG7hcnkMKw9uyiuM_M",
+  authDomain: "rfid-9b396.firebaseapp.com",
+  databaseURL: "https://rfid-9b396-default-rtdb.firebaseio.com",
+  projectId: "rfid-9b396",
+  storageBucket: "rfid-9b396.firebasestorage.app",
+  messagingSenderId: "374473953420",
+  appId: "1:374473953420:web:1a3461f4b2f7ba86316ba9",
+  measurementId: "G-81VY03174R"
 };
 
 

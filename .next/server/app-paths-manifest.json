@@ -1,5 +1,9 @@
 {
   "/page": "app/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/boarding-filter/page": "app/admin/boarding-filter/page.js",
+  "/student/page": "app/student/page.js",
+  "/student/status/page": "app/student/status/page.js",
   "/admin/student-status/page": "app/admin/student-status/page.js",
-  "/admin/page": "app/admin/page.js"
+  "/admin/section-filter/page": "app/admin/section-filter/page.js"
 }
