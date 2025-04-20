@@ -39,7 +39,7 @@ const adminSidebarItems = [
   { title: "Boarding", href: "/admin/boarding-filter" },
 ]
 
-const boardingPoints = ["Vijaywada", "Gudivada", "Machilipatnam", "Pamarru"]
+const boardingPoints = ["Maulimichampatti", "Pollachi", "Palakad", "Saravananpatti"]
 const sections = ["Section A", "Section B", "Section C"]
 const year = ["1st Year","2nd Year","3rd Year","4th Year"]
 const branch = ["CSE","IT","EEE","ECE","Mech","Civil"]
@@ -135,7 +135,7 @@ export default function Students() {
           studentsData.push({
             id: doc.id,
             name: `Student ${doc.id.substring(0, 5)}`, // Placeholder
-            boardingPoint: "Vijaywada", // Placeholder
+            boardingPoint: "Maulimichampatti", // Placeholder
             email: `student-${doc.id.substring(0, 5)}@example.com`, // Placeholder
             phone: `123-${doc.id.substring(0, 7)}`, // Placeholder
             section: "Section A", // Placeholder
